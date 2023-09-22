@@ -30,3 +30,5 @@ for (let index=0; index < typeSuscripción.length; index++) {
         console.log(`Actualmente ${infoSuscripción[index]}`)
     }
 }
+
+

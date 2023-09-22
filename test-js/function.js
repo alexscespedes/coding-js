@@ -3,9 +3,14 @@
 // const completeName = name + lastname;
 // const nickname = "juandc";
 
-function personalInfo (name, lastname, completeName, nickname) {
-    console.log(`I'm ${name} ${lastname}, so my fullname is ${completeName}, but you can call me ${nickname} `);
+function concatName(name, lastname) {
+    return name + ' ' + lastname
+}
+
+function greetings (name, lastname, nickname) {
+    const completeName = concatName(name, lastname)
+    console.log(`mi nombre completo es ${completeName}, pero me puedes decir ${nickname} `)
 }
 
 
-personalInfo('Alex', 'Sencion', 'ASC', 'coach')
+greetings('Alexander', 'Sencion', 'alex')

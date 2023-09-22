@@ -15,4 +15,4 @@ function arrays(array) {
 
 }
 
-arrays(fruits)
+arrays(fruits) 

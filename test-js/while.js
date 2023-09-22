@@ -5,7 +5,9 @@ while (i < 5) {
     console.log("El valor de i es: " + i);
 }
 
-while (i >= 2) {
+let index = 10;
+
+while (index >= 2) {
     i--;
     console.log("El valor de i es: " + i);
 }
