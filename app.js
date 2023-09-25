@@ -1,29 +1,16 @@
 const h1 = document.querySelector('h1')
-const p = document.querySelector('p')
-const paragraph = document.querySelector('.parrafito')
-const pid = document.querySelector('#pid')
-const input = document.querySelector('input')
+const input1 = document.querySelector('#calculo1');
+const input2 = document.querySelector('#calculo2');
+const btn = document.querySelector('#btnCalcular');
+const pResult = document.querySelector('#result');
 
-console.log(input.value)
+function onChange() {
+    console.log('cambio el input')
+}
 
+function btnOnclick() {
+    const sumaInputs = parseInt(input1.value) + parseInt(input2.value);
+    pResult.innerHTML = "Resultado: " + sumaInputs;
 
-console.log({
-    h1,
-    p,
-    paragraph,
-    pid,
-    input
-});
-
-h1.innerHTML = 'Changing html title'
-
-console.log(h1.getAttribute('screen'))
-console.log(h1.setAttribute('screen', 'udemy'))
-
-
-pid.innerHTML = ""
-const img = document.createElement('img');
-img.setAttribute('src', 'https://images.pexels.com/photos/3183148/pexels-photo-3183148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
-console.log(img)
-
-pid.append(img)
+    
+}
